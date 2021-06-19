@@ -38,6 +38,10 @@ body {
 		background-position: center;
 	}
 
+	.device-menu {
+		display: none;
+	}
+
 	.header-menu {
 		position: relative;
 		display: flex;
@@ -1127,67 +1131,45 @@ body {
 	}
 
 	.header-menu {
+		display: none;
+	}
+
+	.device-menu {
+		display: block;
 		position: relative;
 		display: flex;
 		width: 100%;
-		height: 116px;
+		outline: 1px solid white;
 	}
 
-	.header-menu__logotip {
+	.device-menu__logotip {
 		position: relative;
-		height: 100%;
-		margin-left: 80px;
+		margin-left: 50px;
 		margin-right: auto;
+		margin-top: 14px;
 	}
 
-	.header-menu__logotip img {
-		margin-top: 35px;
-	}
-
-	.header-menu__list-link {
+	.device-menu__block {
 		position: relative;
-		height: 100%;
-		margin-left: 350px;
-		margin-right: auto;
-	}
-
-	.header-menu__list-link ul {
-		position: relative;
-		display: flex;
-		list-style-type: none;
-		margin-top: 45px;
-	}
-
-	.header-menu__list-link ul li {
-		margin-left: 28px;
-		margin-right: 28px;
-	}
-
-	.header-menu__list-link a {
-		text-decoration: none;
-		color: rgba(255,255,255,0.8);
-		font-family: Roboto400;
-		font-size: 16px;
-	}
-
-	.header-menu__button-link {
-		position: relative;
-		height: 100%;
+		width: 50px;
+		height: 50px;
 		margin-left: auto;
-		margin-right: 80px;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: none;
+		background-color: rgba(0,0,0,0);
 	}
 
-	.header-menu__button-link button {
+	.device-menu__line {
 		position: relative;
-		width: 184px;
-		height: 44px;
-		border: none;
-		border-radius: 50px;
-		margin-top: 38px;
-		background: linear-gradient(-45deg, #7C6AFA, #C89AFC);
-		font-size: 16px;
-		font-family: Roboto400;
-		color: rgba(255,255,255,0.8);
+		width: 90%;
+		height: 8px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		background: linear-gradient(-45deg,  #451046, #DF5950);
 	}
 
 	.header-content {
@@ -1252,7 +1234,6 @@ body {
 
 	.header-content__box {
 		position: relative;
-		width: 1296px;
 		margin-right: auto;
 		margin-left: auto;
 		display: flex;
@@ -1330,7 +1311,6 @@ body {
 
 	.last-line__earned-students {
 		position: relative;
-		width: 714px;
 		height: 100%;
 		margin-right: auto;
 		margin-left: auto;
@@ -1372,7 +1352,6 @@ body {
 
 	.earned-students__slider {
 		position: relative;
-		width: 440px;
 		height: 100%;
 		background: linear-gradient(-45deg, #451046, #DF5950);
 	}
@@ -1415,7 +1394,6 @@ body {
 
 	main {
 		position: relative;
-		width: 1296px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1429,7 +1407,6 @@ body {
 
 	.about__frame {
 		position: relative;
-		width: 500px;
 		height: 500px;
 		border: 30px solid transparent;
 		border-image: linear-gradient(-45deg, #7C6AFA, #C89AFC);
@@ -1460,8 +1437,6 @@ body {
 		color: white;
 		font-family: Roboto400;
 		font-size: 16px;
-		margin-left: 130px;
-		margin-right: 130px;
 		opacity: 40%;
 		line-height: 1.6;
 		margin-top: 4%;
@@ -1757,7 +1732,6 @@ body {
 		font-size: 48px;
 		font-family: Roboto700;
 		margin-top: 10px;
-		margin-left: 50px;
 	}
 
 	.partners__logos {
@@ -1780,11 +1754,9 @@ body {
 	}
 
 	.partners__top-box img:first-child {
-		margin-left: 50px;
 	}
 
 	.partners__top-box img:last-child {
-		margin-right: 50px;
 	}
 
 	.partners__top-separator {
