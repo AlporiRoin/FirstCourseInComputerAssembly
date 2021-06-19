@@ -118,6 +118,40 @@ body {
 		font-family: Roboto700;
 	}
 
+	.header-content__counter {
+		position: relative;
+		width: 100%;
+		display: flex;
+	}
+
+	.counter__box {
+		position: relative;
+		width: 80px;
+		height: 85px;
+		background-color: #323232;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.counter__box:first-child {
+		margin-left: 0px;
+	}
+
+	.counter__box>p {
+		text-align: center;
+		color: white;
+		font-size: 25px;
+		font-family: 'Courier New', Courier, monospace;
+		margin-top: -10px;
+	}
+
+	.counter__box>h5 {
+		color: #CCCCCC;
+		font-size: 16px;
+		text-align: center;
+		margin-top: -60px;
+	}
+
 	.header-content__last-line {
 		position: absolute;
 		width: 100%;
@@ -1041,6 +1075,7 @@ body {
 
 	.footer__icon {
 		position: relative;
+		display: block;
 		width: 50px;
 		height: 50px;
 		background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
