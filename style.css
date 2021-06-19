@@ -1120,7 +1120,7 @@ body {
 }
 
 @media (min-width: 400px) and (max-width: 1280px) {
-	/* header {
+	header {
 		position: relative;
 		width: 100%;
 		height: 1280px;
@@ -1170,6 +1170,11 @@ body {
 		margin-top: 5px;
 		margin-bottom: 5px;
 		background: linear-gradient(-45deg,  #451046, #DF5950);
+	}
+
+	.device-menu__list-link {
+		position: relative;
+		display: none;
 	}
 
 	.header-content {
@@ -2168,5 +2173,5 @@ body {
 	#footer__icon-last {
 		position: relative;
 		top: 13px;
-	} */
+	}
 }
