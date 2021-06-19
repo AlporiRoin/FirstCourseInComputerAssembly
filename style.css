@@ -1198,8 +1198,6 @@ body {
 		width: 80px;
 		height: 85px;
 		background-color: #323232;
-		margin-left: 15px;
-		margin-right: 15px;
 	}
 
 	.counter__box:first-child {
@@ -1263,7 +1261,6 @@ body {
 	.last-line__all-students {
 		position: relative;
 		display: flex;
-		width: 250px;
 		margin-top: 40px;
 		margin-right: auto;
 		margin-left: auto;
