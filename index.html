@@ -7,17 +7,23 @@
 	</head>
 	<body>
 		<div class="device-menu__list-link">
-			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Курсы</a></li>
-				<li><a href="#">Расписание</a></li>
-				<li><a href="#">Преподаватели</a></li>
-				<li><a href="#">Рассылка</a></li>
-				<li><a href="#">Контакты</a></li>
-				<li><button>Зайти в кабинет</button></li>
-			</ul>
+			<div class="device-menu__container">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Курсы</a></li>
+					<li><a href="#">Расписание</a></li>
+					<li><a href="#">Преподаватели</a></li>
+					<li><a href="#">Рассылка</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><button>Зайти в кабинет</button></li>
+				</ul>
+				<div class="device-menu__cross" >
+					<div class="device-menu__cross-line" ></div>
+					<div class="device-menu__cross-line" ></div>
+				</div>
+			</div>
 		</div>
-		<header>
+		<header class="container" >
 			<div class="header-menu">
 				<div class="header-menu__logotip">
 					<img src="./static/picture/logo.svg">
@@ -72,7 +78,7 @@
 			</div>
 			<div class="header-content__last-line">
 				<div class="header-content__box">
-					<button class="header-content__button">Заказать курс</button>
+					<button id="header-content__button">Заказать курс</button>
 					<div class="last-line__people">
 						<div class="last-line__all-students">
 							<h1 class="all-students__title">Учеников всего:</h1>

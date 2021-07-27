@@ -42,6 +42,11 @@ body {
 		display: none;
 	}
 
+	.device-menu__list-link {
+		position: relative;
+		display: none;
+	}
+
 	.header-menu {
 		position: relative;
 		display: flex;
@@ -63,7 +68,7 @@ body {
 	.header-menu__list-link {
 		position: relative;
 		height: 100%;
-		margin-left: 350px;
+		margin-left: auto;
 		margin-right: auto;
 	}
 
@@ -174,9 +179,13 @@ body {
 		display: flex;
 	}
 
+	#header-content__button {
+		display: none;
+	}
+
 	.header-content__last-line button {
 		position: relative;
-		width: 170px;
+		width: 160px;
 		height: 44px;
 		border: none;
 		border-radius: 50px;
@@ -193,7 +202,7 @@ body {
 		position: relative;
 		height: 100%;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: 0px;
 	}
 
 	.last-line__all-students {
@@ -202,7 +211,7 @@ body {
 		width: 250px;
 		margin-top: 40px;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: 0px;
 	}
 
 	.all-students__title {
@@ -218,6 +227,8 @@ body {
 		font-size: 16px;
 		font-family: Roboto700;
 		color: rgb(255,255,255);
+
+		margin-left: 80px;
 	}
 
 	.last-line__completed-course {
@@ -226,7 +237,7 @@ body {
 		width: 100%;
 		margin-top: 15px;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: 0px;
 	}
 
 	.completed-course__title {
@@ -242,6 +253,8 @@ body {
 		font-size: 16px;
 		font-family: Roboto700;
 		color: rgb(255,255,255);
+
+		margin-left: 20px;
 	}
 
 	.last-line__earned-students {
@@ -254,7 +267,7 @@ body {
 
 	.earned-students__text {
 		position: relative;
-		width: 40%;
+		width: 100%;
 		display: flex;
 		margin-top: 40px;
 	}
@@ -271,6 +284,9 @@ body {
 		font-size: 16px;
 		font-family: Roboto700;
 		color: rgb(255,255,255);
+
+		margin-left: auto;
+		margin-right: 0px;
 	}
 
 	.earned-students__result {
@@ -313,7 +329,10 @@ body {
 		font-size: 16px;
 		font-family: Roboto400;
 		color: rgb(255,255,255);
-		opacity: 40%;
+		opacity: 100%;
+
+		margin-left: auto;
+		margin-right: 0px;
 	}
 
 	section {
@@ -1178,8 +1197,69 @@ body {
 	}
 
 	.device-menu__list-link {
+		position: absolute;
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		z-index: 5;
+	}
+
+	.device-menu__container {
 		position: relative;
-		display: none;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: #121212;
+
+		display: flex;
+
+	}
+
+	.device-menu__container ul {
+		position: relative;
+
+		width: 80%;
+		height: 100%;
+	}
+
+	.device-menu__container ul li {
+		position: relative;
+
+		width: 50%;
+		height: 50px;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 10%;
+
+		background: linear-gradient(-45deg,  #451046, #DF5950);
+	}
+
+	.device-menu__container ul li:last-child {
+		position: relative;
+
+		background: rgba(0,0,0,0);
+	}
+
+	.device-menu__container ul li a {
+		position: relative;
+
+		text-decoration: none;
+
+		color: white;
+
+		font-size: 40px;
+		font-family: Roboto400;
+
+	}
+
+	.device-menu__cross {
+		position: relative;
+
 	}
 
 	.header-content {
@@ -1256,7 +1336,7 @@ body {
 		margin-left: auto;
 	}
 
-	.header-content__button {
+	#header-content__button {
 		display: none;
 	}
 
