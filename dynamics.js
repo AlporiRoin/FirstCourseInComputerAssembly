@@ -8,6 +8,9 @@ let _arrHours = ['Час','Часа','Часов'];
 let _arrMinutes = ['Минута','Минуты','Минут'];
 let _arrSeconds = ['Секунда','Секунды','Секунд'];
 
+let _deviceMenu = document.querySelector('.device-menu__list-link');
+let _promptWindow = document.querySelector('.pop-up__notification');
+
 function decreaseInTime() {
     
     let $date = new Date();
@@ -165,3 +168,28 @@ setInterval(() => {
     timeOutput();
 
 }, 1000);
+
+function deviceMenuOpening() {
+    
+    _deviceMenu.style.display = 'block';
+
+}
+
+function deviceMenuClosure() {
+    
+    _deviceMenu.style.display = 'none';
+
+}
+
+function openingHint() {
+
+    _promptWindow.style.display = 'block'
+    _promptWindow.style.top = window.pageYOffset + 'px'
+
+}
+
+function closureHint() {
+
+    _promptWindow.style.display = 'none'
+
+}

@@ -6,6 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<div class="pop-up__notification" >
+			<h>Вы находитесь на статическом сайте!</h>
+			<h>Данная функция на этом сайте недоступна!</h>
+			<div class="pop-up__button" >
+				<button onclick="closureHint()" >Закрыть окно</button>
+			</div>
+		</div>
 		<div class="device-menu__list-link">
 			<div class="device-menu__container">
 				<ul>
@@ -17,9 +24,9 @@
 					<li><a href="#">Контакты</a></li>
 					<li><button>Зайти в кабинет</button></li>
 				</ul>
-				<div class="device-menu__cross" >
-					<div class="device-menu__cross-line" ></div>
-					<div class="device-menu__cross-line" ></div>
+				<div class="device-menu__cross"  onclick="deviceMenuClosure()"  >
+					<div class="device-menu__first-line" ></div>
+					<div class="device-menu__second-line" ></div>
 				</div>
 			</div>
 		</div>
@@ -39,14 +46,14 @@
 					</ul>
 				</div>
 				<div class="header-menu__button-link">
-					<button>Зайти в кабинет</button>
+					<button onclick="openingHint()" >Зайти в кабинет</button>
 				</div>
 			</div>
 			<div class="device-menu">
 				<div class="device-menu__logotip">
 					<img src="./static/picture/logo.svg">
 				</div>
-				<button class="device-menu__block">
+				<button class="device-menu__block" onclick="deviceMenuOpening()">
 					<div class="device-menu__line"></div>
 					<div class="device-menu__line"></div>
 					<div class="device-menu__line"></div>
@@ -78,7 +85,7 @@
 			</div>
 			<div class="header-content__last-line">
 				<div class="header-content__box">
-					<button id="header-content__button">Заказать курс</button>
+					<button id="header-content__button"  onclick="openingHint()" >Заказать курс</button>
 					<div class="last-line__people">
 						<div class="last-line__all-students">
 							<h1 class="all-students__title">Учеников всего:</h1>
@@ -102,7 +109,7 @@
 							<h1 class="earned-students__finish">1 000 000P</h1>
 						</div>
 					</div>
-					<button id="device-content__button" >Заказать курс</button>
+					<button id="device-content__button" onclick="openingHint()" >Заказать курс</button>
 				</div>
 			</div>
 		</header>
@@ -353,7 +360,7 @@
 							<h6 class="teacher-subtitle">
 								Специалист по видеокартам
 							</h6>
-							<button>Биография</button>
+							<button onclick="openingHint()" >Биография</button>
 						</div>
 						<div class="teacher">
 							<img src="./static/picture/Ellipse6.svg">
@@ -363,7 +370,7 @@
 							<h6 class="teacher-subtitle">
 								Специалист по видеокартам
 							</h6>
-							<button>Биография</button>
+							<button onclick="openingHint()" >Биография</button>
 						</div>
 						<div class="teacher">
 							<img src="./static/picture/Ellipse7.svg">
@@ -373,7 +380,7 @@
 							<h6 class="teacher-subtitle">
 								Специалист по видеокартам
 							</h6>
-							<button>Биография</button>
+							<button onclick="openingHint()" >Биография</button>
 						</div>
 					</div>
 				</div>
@@ -388,7 +395,7 @@
 			</h1>
 			<form>
 				<input type="email" name="" placeholder="E-mail" class="footer_input" >
-				<button>Подписаться</button>
+				<button onclick="openingHint()" >Подписаться</button>
 			</form>
 			<div class="footer__icon-box">
 				<a href="#" class="footer__icon">
